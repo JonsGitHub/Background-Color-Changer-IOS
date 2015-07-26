@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Background_Color_Changer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-3m-zNc">
+                                <rect key="frame" x="184" y="87" width="233" height="30"/>
+                                <state key="normal" title="Change Background Color to Red">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChangeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Os6-z1-sOO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eM-Qp-6xs">
+                                <rect key="frame" x="216" y="125" width="169" height="30"/>
+                                <state key="normal" title="Reset Background Color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ChangeWhite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6oE-jZ-9mK"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n9T-cA-TEg">
+                                <rect key="frame" x="276" y="230" width="51" height="31"/>
+                                <connections>
+                                    <action selector="ToggleRed:" destination="BYZ-38-t0r" eventType="valueChanged" id="Vqo-M2-Mxb"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use the switch to change the text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvh-dC-hCm">
+                                <rect key="frame" x="171" y="289" width="258" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6eM-Qp-6xs" firstAttribute="top" secondItem="5IN-3m-zNc" secondAttribute="bottom" constant="8" symbolic="YES" id="Da8-9a-1pe"/>
+                            <constraint firstItem="5IN-3m-zNc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="JSJ-cz-crn"/>
+                            <constraint firstItem="6eM-Qp-6xs" firstAttribute="centerX" secondItem="5IN-3m-zNc" secondAttribute="centerX" id="QpT-bB-WJi"/>
+                            <constraint firstItem="jvh-dC-hCm" firstAttribute="centerX" secondItem="n9T-cA-TEg" secondAttribute="centerX" id="Yh8-6K-uOy"/>
+                            <constraint firstItem="n9T-cA-TEg" firstAttribute="top" secondItem="6eM-Qp-6xs" secondAttribute="bottom" constant="75" id="YjX-RE-VIp"/>
+                            <constraint firstItem="jvh-dC-hCm" firstAttribute="top" secondItem="n9T-cA-TEg" secondAttribute="bottom" constant="28" id="Z0Z-E1-mjs"/>
+                            <constraint firstItem="6eM-Qp-6xs" firstAttribute="centerX" secondItem="n9T-cA-TEg" secondAttribute="centerX" id="l5q-Qu-tMF"/>
+                            <constraint firstItem="6eM-Qp-6xs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m5A-te-2ys"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Label" destination="jvh-dC-hCm" id="q2n-GB-rvG"/>
+                        <outlet property="mySwitch" destination="n9T-cA-TEg" id="kli-EY-WNl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
