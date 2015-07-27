@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>81DDE722-BCDB-4912-B0A0-7F20CC2F902C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Background Color Changer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>14BBC209B23BFC836EBF8EDA94606F0C52B54C69</key>
+		<string>https://github.com/JonsGitHub/Background-Color-Changer-IOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Background Color Changer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>14BBC209B23BFC836EBF8EDA94606F0C52B54C69</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JonsGitHub/Background-Color-Changer-IOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>14BBC209B23BFC836EBF8EDA94606F0C52B54C69</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>14BBC209B23BFC836EBF8EDA94606F0C52B54C69</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Background-Color-Changer-IOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
